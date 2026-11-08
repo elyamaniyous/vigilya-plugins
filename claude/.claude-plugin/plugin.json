@@ -1,0 +1,9 @@
+{
+  "name": "vigilya",
+  "displayName": "Vigilya",
+  "version": "2.0.0",
+  "description": "Auditez vos missions, surveillez les risques et reconstituez les opérations avec les contrôles déterministes et les preuves de Vigilya. Les rapports restent soumis à la validation humaine.",
+  "author": { "name": "Genlabs Digital Ltd", "email": "youssef@generovo.com", "url": "https://vigilya.io" },
+  "homepage": "https://vigilya.io/documentation",
+  "license": "LicenseRef-Vigilya-Proprietary"
+}

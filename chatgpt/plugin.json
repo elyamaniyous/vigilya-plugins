@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vigilya",
+  "version": "2.0.0",
+  "description": "Audit, monitor and investigate accounting anomalies with Vigilya's deterministic checks and source evidence.",
+  "author": { "name": "Genlabs Digital Ltd", "email": "youssef@generovo.com", "url": "https://vigilya.io" },
+  "homepage": "https://vigilya.io/documentation",
+  "license": "LicenseRef-Vigilya-Proprietary",
+  "keywords": ["audit", "comptabilite", "investigation", "vigilya"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Vigilya",
+        "shortDescription": "Accounting audit and evidence",
+        "longDescription": "For accounting firms and finance teams: review authorized engagements, monitor risks, trace transactions and prepare draft reports. Calculations and evidence come from the Vigilya engine. A Vigilya account and engagement access are required; onboarding is assisted. Alerts do not prove fraud or loss, and conclusions require professional review.",
+        "developerName": "Genlabs Digital Ltd",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://vigilya.io",
+        "supportURL": "https://vigilya.io/support",
+        "privacyPolicyURL": "https://vigilya.io/confidentialite",
+        "termsOfServiceURL": "https://vigilya.io/legal",
+        "brandColor": "#0f4c5c",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "defaultPrompt": [
+          "Analyse ma mission Vigilya et présente les contrôles prioritaires.",
+          "Fais le point sur les risques et la fraîcheur des données de ma mission.",
+          "Explique ce solde et reconstitue les opérations avec leurs preuves."
+        ]
+      },
+      "publication": {
+        "countries": ["FR", "MA"],
+        "release_notes": "Version 2.0.0 is a directory submission candidate with three French-language workflows for audit, monitoring and investigation, an OAuth connection with engagement-scoped consent, and draft reports subject to human review. Package metadata, public support links and distribution permissions have been prepared for review. This version does not imply directory approval or publication.",
+        "translations": {
+          "fr-FR": {
+            "subtitle": "Audit comptable et preuves",
+            "description": "Pour les cabinets comptables et les directions financières : examinez les missions autorisées, suivez les risques, reconstituez les opérations et préparez des rapports brouillons. Les calculs et preuves proviennent du moteur Vigilya. Un compte Vigilya et l’accès aux missions sont nécessaires ; la prise en main est accompagnée. Une alerte ne prouve pas une fraude ou une perte, et les conclusions nécessitent une validation professionnelle."
+          }
+        }
+      }
+    }
+  }
+}

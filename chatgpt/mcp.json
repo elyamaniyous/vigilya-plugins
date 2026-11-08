@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "vigilya": {
+      "type": "streamable-http",
+      "url": "https://vigilya.io/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": { "mode": "cimd" },
+            "baseScopes": ["missions:read"],
+            "defaultScopes": ["missions:read", "imports:write", "analysis:run", "reports:write", "offline_access"]
+          }
+        }
+      }
+    }
+  }
+}

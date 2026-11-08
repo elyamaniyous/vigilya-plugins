@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vigilya": {
+      "type": "http",
+      "url": "https://vigilya.io/mcp"
+    }
+  }
+}
